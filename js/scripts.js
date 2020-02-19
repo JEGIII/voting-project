@@ -1,7 +1,7 @@
 $(document).ready(function() {
-  var over16 = confirm("Are you over 16? Click OK for yes or Cancel for no.");
+  var age = parseInt(prompt("How old are you?"));
 
-  if (over16) {
+  if (age >= 16) {
     $('#approved').show();
   } else {
     $('#declined').show();
